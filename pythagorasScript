@@ -1,0 +1,15 @@
+document.getElementById('calculate').addEventListener('click', function() {
+  var width = document.getElementById('width').value;
+  var height = document.getElementById('height').value;
+  document.getElementById('triangle').setAttribute('width', width);
+  document.getElementById('triangle').setAttribute('height', height);
+  document.getElementById('hypotenuse').value= Math.sqrt((width*width)+(height*height));
+  
+  if (width <=0) {
+    alert(width);
+  }
+  
+  if (height <= 0) {
+    alert(height);
+  }
+});
